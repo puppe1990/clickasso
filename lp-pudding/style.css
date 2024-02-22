@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.curso-intro, .aprendizado, .depoimentos {
+  padding: 20px;
+}
+
+.curso-intro p, .aprendizado ul, .depoimentos p {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.curso-intro img, .aprendizado img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ffc107;
+  text-decoration: none;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila Pudim Perfeito</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bg-warning text-white text-center py-4">
+      <h1>Domine a Arte do Pudim: Curso Online Completo</h1>
+  </header>
+
+  <section class="curso-intro py-5 text-center">
+      <div class="container">
+          <p>Transforme sua paixão por pudins em uma arte com nosso curso online completo.</p>
+          <img src="pudim-header.webp" alt="Deliciosos pudins" class="img-fluid">
+      </div>
+  </section>
+
+  <section class="aprendizado py-5 bg-light">
+      <div class="container">
+          <h2>O Que Você Vai Aprender:</h2>
+          <ul class="list-unstyled">
+            <li>Aprenda mais de 50 receitas de Pudim e Tortas para vender o ano todo. Um doce tradicional e típico de festas de final de ano e amado por todos os brasileiros.</li>
+            <li>O guia conta com receitas tradicionais, gorumet, e dicas importantes para produção</li>
+          </ul>
+          <img src="pudim-variedades.webp" alt="Variedades de Pudim" class="img-fluid mt-3">
+      </div>
+  </section>
+
+  <section class="depoimentos py-5 text-center">
+      <div class="container">
+          <h2>Depoimentos de Alunos Satisfeitos:</h2>
+          <blockquote class="blockquote">
+              <p class="mb-0">"Td material curso didática acertiva , excelente conteúdo. Super indico. Nota 10%qualidade.
+                ..." - DEISE</p>
+          </blockquote>
+      </div>
+  </section>
+
+  <section class="cta py-5 text-center mb-5">
+    <div class="container">
+        <h2>Oferta Exclusiva Acaba em:</h2>
+        <div id="countdown" class="font-weight-bold my-3"></div>
+        <a href="https://go.hotmart.com/M91134707L" target="_blank" class="btn btn-warning btn-lg">Inscreva-se Agora!</a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+      <p>Pronto para Dominar a Arte do Pudim? <a href="https://go.hotmart.com/M91134707L" target="_blank" class="text-warning">Inscreva-se agora!</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<script>
+  // Definindo o tempo do contador para 10 minutos a partir do momento atual
+  var countDownDate = new Date().getTime() + 10 * 60 * 1000;
+
+  // Atualiza o contador a cada 1 segundo
+  var x = setInterval(function() {
+      // Pega o momento atual
+      var now = new Date().getTime();
+
+      // Encontra a distância entre agora e a data final do contador
+      var distance = countDownDate - now;
+
+      // Cálculos de tempo para minutos e segundos
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Mostra o resultado no elemento com id="countdown"
+      document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
+
+      // Se o contador terminar, escreve algum texto
+      if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRADO";
+      }
+  }, 1000);
+</script>
+
+
